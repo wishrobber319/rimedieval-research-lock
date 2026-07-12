@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ModMetaData>
+    <packageId>wishRobber.rimedievalresearchlock</packageId>
+    <name>Rimedieval - Enforced Research Lock</name>
+    <author>wishRobber</author>
+    <description>Rimedieval only hides disallowed (too-advanced) research projects from the vanilla research tab - it never actually makes them unstartable, so their CanStartNow stays true. Mods like Research Whatever pick any project whose CanStartNow is true, so they happily research the hidden ones, bypassing Rimedieval's restriction.
+
+This patch makes Rimedieval-disallowed projects fail CanStartNow, so Research Whatever (and any other "research anything" path, e.g. research-tree queueing) respects the lock. It reuses Rimedieval's own allowed-projects rule, so it honors Rimedieval's tech-level setting and its Odyssey exception. Changing that Rimedieval setting takes effect on the next restart.</description>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+    <modDependencies>
+        <li>
+            <packageId>brrainz.harmony</packageId>
+            <displayName>Harmony</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+        </li>
+        <li>
+            <packageId>Ogam.Rimedieval</packageId>
+            <displayName>Rimedieval</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2516523040</steamWorkshopUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>brrainz.harmony</li>
+        <li>Ogam.Rimedieval</li>
+        <li>avilmask.ResearchWhatever</li>
+        <li>Mlie.ResearchTree</li>
+    </loadAfter>
+</ModMetaData>
