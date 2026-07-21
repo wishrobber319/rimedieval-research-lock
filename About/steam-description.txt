@@ -1,0 +1,9 @@
+[b]Tech-level limits that actually hold.[/b] Rimedieval only hides research that is too advanced, so mods like Research Whatever can still start it. This makes disallowed projects genuinely unstartable.
+
+[hr][/hr]
+[b]What's inside[/b]
+[list]
+[*][b]Hard research lock.[/b] Projects above your chosen tech level can't be started, not just hidden.
+[*][b]Closes the bypass.[/b] Nothing sneaks past Rimedieval's limits through other research mods.
+[*][b]Requires Rimedieval.[/b]
+[/list]
